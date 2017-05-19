@@ -30,7 +30,6 @@ We're trying to use the best tools and practices in order to produce a quality e
 | Project Management Board| [here](https://github.com/yeseg11/Let-it-know/projects/1) |
 | Contributors | [![GitHub contributors](https://img.shields.io/github/contributors/jce-il/project-template.svg)](https://github.com/yeseg11/Let-it-know/graphs/contributors)|
 | Deployment | [![Firebase](https://img.shields.io/badge/Firebase%20server-running-brightgreen.svg)] |
-| Security | [![Known Vulnerabilities](https://snyk.io/test/github/yeseg11/Let-it-know/badge.svg)](https://snyk.io/test/github/yeseg11/Let-it-know) |
 | Documnetation | [![Inline docs](http://inch-ci.org/github/yeseg11/Let-it-know.svg?branch=master)](http://inch-ci.org/github/yeseg11/Let-it-know) |
 | Project Course Status | ![Week_Status](https://img.shields.io/badge/week-9-yellow.svg) |
 
