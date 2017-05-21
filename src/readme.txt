@@ -1,3 +1,9 @@
+
+Version 1.43
+
+* updated "back button" to image
+* fixed hebrew unicode issue with links
+
 Version 1.42
 
 * added back button
