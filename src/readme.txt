@@ -1,3 +1,11 @@
+Version 1.51
+
+* Added filtering to calendar
+* Events colored by source
+* Admin is capable of choosing colors for users (including himself)
+* Moved libraries to libs
+* Create new users (only admin)
+
 Version 1.5
 
 * Added Admin-page
