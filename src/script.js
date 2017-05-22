@@ -92,20 +92,40 @@ var page_module = (function ()
 			{
 				snapshot.forEach(function(childSnapshot) 
 				{
-				  add_events_from_page(childSnapshot.key);
+				  if(childSnapshot.val().charAt(0) == '1')
+					add_events_from_page(childSnapshot.key);
 				});
 			});
 		}
 		
 		scan_all_db_for_pages();
 	};
-	return { initModule, gather_all_events_from_all_facebook_pages};
+	let create_buttons = function()
+	{
+		let back_button_build = function()
+		{
+			let link = document.createElement("a");
+			let pic = document.createElement("IMG");
+			pic.src = "buttons/admin.png";
+			pic.height = 40;
+			pic.width = 40;
+			link.appendChild(pic);
+			link.href = "login_page/login.html";
+			document.body.appendChild(link);
+		};
+		
+		
+		back_button_build();
+	}
+	return { initModule, gather_all_events_from_all_facebook_pages, create_buttons, };
 	
 }());
 
 
+
 $( document ).ready(function() 
 {
+	page_module.create_buttons();
 	page_module.initModule();
 	page_module.gather_all_events_from_all_facebook_pages();
 });

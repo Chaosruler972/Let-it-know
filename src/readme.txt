@@ -1,3 +1,9 @@
+Version 1.5
+
+* Added Admin-page
+* Auth by FireAuth
+* Added icons for buttons
+
 
 Version 1.43
 
