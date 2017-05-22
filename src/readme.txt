@@ -1,3 +1,33 @@
+Version 1.51
+
+* Added filtering to calendar
+* Events colored by source
+* Admin is capable of choosing colors for users (including himself)
+* Moved libraries to libs
+* Create new users (only admin)
+
+Version 1.5
+
+* Added Admin-page
+* Auth by FireAuth
+* Added icons for buttons
+
+
+Version 1.43
+
+* updated "back button" to image
+* fixed hebrew unicode issue with links
+
+Version 1.42
+
+* added back button
+* added Load screen for facebook page (?)
+
+Version 1.41
+
+*fix - config.js on /facebook_page variable name was incorrect
+
+
 Version 1.4
 
 * Autheration by APP id instead of user-token, allowing grasp of event data without logging in
