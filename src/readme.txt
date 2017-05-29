@@ -1,3 +1,21 @@
+
+Version 1.5.4
+
+* fixed callbacks to be function based instead of time based (//TODO link)
+
+// TODO callbacks for after gather_all_events() and get_users_db() to call localstorage_function to "repick" our last picked username filter
+
+Version 1.5.3
+
+* added local storage to remember last picked users for display filter
+* fixed username to deprecete "@domain" suffix
+* fixed password length to be >=6
+
+
+Version 1.5.2
+
+* Fix in date bug.
+
 Version 1.51
 
 * Added filtering to calendar

@@ -15,6 +15,7 @@ $( document ).ready(function()
 let send_data = function()
 {
 	let email = document.getElementById("email").value;
+	email+="@gmail.com";
 	let pw = document.getElementById("password").value;
 	
 	if(email != null && pw != null)
@@ -58,12 +59,13 @@ let build_HTML = function()
 		
 		
 		let email = document.createElement("INPUT");
-		email.setAttribute("type", "email");
+		email.setAttribute("type", "input");
 		email.name = "email";
 		email.required = "true";
 		email.autocomplete = "true";
 		email.form = form_obj;
 		email.id = "email";
+		email.setAttribute("pattern","[a-zA-Z0-9!#$%^*_|]{0,100}");
 		
 		form_obj.appendChild(document.createTextNode("E-mail: "));
 		form_obj.appendChild(email);
@@ -133,7 +135,7 @@ let auto_fill_buttons = function()
 	btn1.appendChild(document.createTextNode("Fill user (company) reguler"));
 	btn1.addEventListener("click",function() 
 	{
-		document.getElementById("email").value = "terem@gmail.com";
+		document.getElementById("email").value = "terem";
 		document.getElementById("password").value = "123456";
 	});
 	
@@ -143,7 +145,7 @@ let auto_fill_buttons = function()
 	btn2.appendChild(document.createTextNode("Fill admin (nadav)"));
 	btn2.addEventListener("click",function() 
 	{
-		document.getElementById("email").value = "yeseg11@gmail.com";
+		document.getElementById("email").value = "yeseg11";
 		document.getElementById("password").value = "123456";
 	});
 	

@@ -76,7 +76,7 @@ let db_rendering = function()
 			{
 				let status = "";
 				if(childSnapshot.val().charAt(0) == '0')
-					status = "Not approved yet";
+					status = "Pending";
 				else
 					status = "Approved";
 				let row = table.insertRow(i);
@@ -91,14 +91,14 @@ let db_rendering = function()
 					{
 						let aprvbtn = document.createElement('input');
 						aprvbtn.type = "button";
-						aprvbtn.style.backgroundColor = "red";
+						aprvbtn.style.backgroundColor = "orange";
 						aprvbtn.setAttribute("onClick","approve("+ '"' + childSnapshot.key+ '"'+"," + i +");");
 						aprvbtn.value = status;
 						cell2.appendChild(aprvbtn);
 					}
 					else
 					{
-						cell2.innerHTML = status.fontcolor("red");
+						cell2.innerHTML = status.fontcolor("orange");
 					}
 				}
 				let cell3 = document.createTextNode(email);
@@ -168,12 +168,12 @@ let Add_new = function()
 			let cell2 = row.insertCell(1);
 			let cell3 = row.insertCell(2);
 			cell1.innerHTML = "<a href='https://www.facebook.com/" +page+ "'>" + page + "</a>";
-			let status = "Not Approved";
+			let status = "Pending";
 			if(is_admin == 1)
 			{
 				let aprvbtn = document.createElement('input');
 				aprvbtn.type = "button";
-				aprvbtn.style.backgroundColor = "red";
+				aprvbtn.style.backgroundColor = "orange";
 				aprvbtn.setAttribute("onClick","approve("+ '"' + page+ '"'+"," + document.getElementById("table").childElementCount +");");
 				aprvbtn.value = status;
 				cell2.appendChild(aprvbtn);

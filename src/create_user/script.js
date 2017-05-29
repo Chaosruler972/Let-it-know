@@ -7,6 +7,7 @@ $( document ).ready(function()
 let send_data = function()
 {
 	let email = document.getElementById("email").value;
+	email+="@gmail.com";
 	let pw = document.getElementById("password").value;
 	let pw2 = document.getElementById("password2").value;
 	let colors = document.getElementById("colors").style.backgroundColor.split(',');
@@ -34,6 +35,7 @@ let send_data = function()
 		admin_req = admin_req.ref("admin");
 		admin_req.once('value').then(function(snapshot)
 		{
+			
 			if(snapshot.val().localeCompare(firebase.auth().currentUser.email)==0)
 			{
 				let backup = firebase.auth().currentUser;
@@ -103,14 +105,16 @@ let build_HTML = function()
 		
 		
 		let email = document.createElement("INPUT");
-		email.setAttribute("type", "email");
+		email.setAttribute("type", "input");
 		email.name = "email";
 		email.required = "true";
 		email.autocomplete = "true";
 		email.form = form_obj;
 		email.id = "email";
+		email.setAttribute("pattern","[a-zA-Z0-9!#$%^*_|]{0,100}");
+	
 		
-		form_obj.appendChild(document.createTextNode("E-mail: "));
+		form_obj.appendChild(document.createTextNode("Username: "));
 		form_obj.appendChild(email);
 		
 		let pw = document.createElement("INPUT");
@@ -120,6 +124,8 @@ let build_HTML = function()
 		pw.autocomplete = "true";
 		pw.form = form_obj;
 		pw.id = "password";
+		pw.minLength = 6;
+	//	pw.setAttribute('min',6);
 		
 		form_obj.appendChild(document.createElement("br"));
 		form_obj.appendChild(document.createTextNode("Password: "));
@@ -133,6 +139,7 @@ let build_HTML = function()
 		pw2.autocomplete = "true";
 		pw2.form = form_obj;
 		pw2.id = "password2";
+		pw2.minLength = 6;
 		
 		form_obj.appendChild(document.createElement("br"));
 		form_obj.appendChild(document.createTextNode("Confirm password: "));

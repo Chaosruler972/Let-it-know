@@ -4,6 +4,7 @@ var page_module = (function ()
 	let pw = "Mgo6B97nHZKdwXMiGw5P";
 	let events = new Array();
 	let users = new Array();
+	let fb = 0;
 	let initModule = function()
 	{
 		//// Calendar initation virtual space ////
@@ -60,7 +61,7 @@ var page_module = (function ()
 			// creating an event format in fullcalendar API
 			//$('#calendar1').fullCalendar( 'renderEvent', event, true);
 			 // rendering said event to fullcalendar API
-		}
+		};
 		
 		let withdraw_events_from_facebook_page = function(data, email) // subfunction responsible for scanning entire event database file from facebook page
 		{
@@ -72,7 +73,7 @@ var page_module = (function ()
 				event_date.setISO8601(data[i].start_time); // converts time from Facebook API date format to Javascript Date format
 				add_event_to_calendar(data[i].id, data[i].name, event_date, email);		 
 			}
-		}
+		};
 		
 		
 		let add_events_from_page = function(str, email) // subfunction responsible for doing the API request for the event database
@@ -85,6 +86,9 @@ var page_module = (function ()
 				  if (response && !response.error) // if request was approved by server 
 				  {
 						withdraw_events_from_facebook_page(response.data, email);
+						fb--;
+						if(fb==0)
+							local_storage_func();
 				  }
 				  else
 				  {
@@ -93,21 +97,24 @@ var page_module = (function ()
 				}
 			);
 			
-		}
+		};
 		
 		let scan_all_db_for_pages = function() // subfunction responsible for facebook DB load via Firebase API call
 		{
 			let database = firebase.database();
 			let leadsRef = database.ref('Facebook');
-			leadsRef.once('value').then(function(snapshot) 
+			leadsRef.once('value',function(snapshot) 
 			{
+				fb = snapshot.numChildren();
 				snapshot.forEach(function(childSnapshot) 
 				{
-				  if(childSnapshot.val().charAt(0) == '1')
-					add_events_from_page(childSnapshot.key,childSnapshot.val().substring(1, childSnapshot.val().length));
+					if(childSnapshot.val().charAt(0) == '1')
+						add_events_from_page(childSnapshot.key,childSnapshot.val().substring(1, childSnapshot.val().length));
 				});
+				
 			});
-		}
+			
+		};
 		
 		scan_all_db_for_pages();
 	};
@@ -132,7 +139,7 @@ var page_module = (function ()
 	{
 		let database = firebase.database();
 		let leadsRef = database.ref('Users');
-		leadsRef.once('value').then(function(snapshot) 
+		leadsRef.once('value',function(snapshot) 
 		{
 			snapshot.forEach(function(childSnapshot) 
 			{
@@ -144,18 +151,26 @@ var page_module = (function ()
 				user_obj.color = color;
 				users.push(user_obj);
 			});
+			
 		}).then(build_filter_table);
 	};
 	let build_filter_table = function()
 	{
 		let checkbox_handler = function(e)
 		{
-			let status = "removeEvents";
+			let status = "";
 			if(e.srcElement.checked == true)
+			{
 				status="addEventSource";
+				localStorage.setItem(e.srcElement.id,"1");
+			}
+			else
+			{
+				status = "removeEvents";
+				localStorage.setItem(e.srcElement.id,"0");
+			}
 			add_remove_by_id(users[e.srcElement.id].id,status);
 		};
-		
 		
 		let i=1;
 		let table = document.createElement("table");
@@ -184,6 +199,8 @@ var page_module = (function ()
 			{
 				gather_all_events_from_all_facebook_pages();
 			}
+			if(localStorage.getItem(index) === null)
+				localStorage.setItem(index,"0");
 		});
 		document.body.appendChild(table);	
 	};
@@ -205,7 +222,30 @@ var page_module = (function ()
 				//$('#calendar1').fullCalendar('removeEvents',id);
 			}
 	};
-	return { initModule, gather_all_events_from_all_facebook_pages, create_buttons, events,users,build_filter_table,};
+	const local_storage_func = function()
+	{
+		let i = 0;
+		while(true)
+		{
+			let item = localStorage.getItem(i);
+			if(item === null)
+			{
+				return;
+			}
+			if(item === "1")
+			{
+			//	document.getElementById(""+i).checked = true;
+				document.getElementById(""+i).click();
+			}
+			else
+			{
+				//document.getElementById(""+i).checked = false;
+			}
+			i++;
+		}
+	};
+		
+	return { initModule, gather_all_events_from_all_facebook_pages, create_buttons, events,users,build_filter_table,local_storage_func};
 	
 }());
 
@@ -217,7 +257,7 @@ $( document ).ready(function()
 	page_module.initModule();
 	//$('#calendar1').fullCalendar('removeEvents',id);
 	//console.log(page_module.events);
-	console.log(page_module.events);
+	//setTimeout(page_module.local_storage_func,1500);
 });
 
 
