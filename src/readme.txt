@@ -1,3 +1,8 @@
+Version 1.5.5
+
+* Added Admin can change passwords
+* fixed when admin deletes a user, all his facebook pages are deleted
+
 
 Version 1.5.4
 

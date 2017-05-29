@@ -23,6 +23,10 @@ let send_data = function()
 		firebase.auth().signInWithEmailAndPassword(email, pw).catch(function(error) 
 		{
 			console.log(error.message);
+			if (errorCode === 'auth/wrong-password') 
+			{
+				alert('Wrong password.');
+		    }
 		}).then(function()
 		{
 			if(firebase.auth().currentUser != null)

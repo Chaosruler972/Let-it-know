@@ -57,11 +57,16 @@ let continue_rendering = function()
 				row.appendChild(change_color);
 				let cell3 = document.createElement('input');
 				cell3.type = "button";
-				cell3.setAttribute("onClick","del("+ '"' + childSnapshot.key+ '",' + i +"," + "'" + email + "'" + ");");
-				cell3.value = "Delete";
-				if(email == admin_email)
-					cell3.disabled = true;
+				cell3.setAttribute("onClick","change_password("+ '"' + childSnapshot.key+ '",' + i +"," + "'" + email + "'" + ");");
+				cell3.value = "Change password";
 				row.appendChild(cell3);
+				let cell4 = document.createElement('input');
+				cell4.type = "button";
+				cell4.setAttribute("onClick","del("+ '"' + childSnapshot.key+ '",' + i +"," + "'" + email + "'" + ");");
+				cell4.value = "Delete";
+				if(email == admin_email)
+					cell4.disabled = true;
+				row.appendChild(cell4);
 				i++;
 			}
 		});
@@ -77,11 +82,12 @@ let createTable = function()
 	let row = table.insertRow(0);
 	let cell1 = row.insertCell(0);
 	let cell2 = row.insertCell(1);
-	let cell3 = row.insertCell(2);
-	let cell4 = row.insertCell(3);
+	let cell4 = row.insertCell(2);
+	let cell5 = row.insertCell(3);
 	cell1.innerHTML = "Username";
 	cell2.innerHTML = "Color"
-	cell4.innerHTML = "<input type='button' onclick='Add_new()' value='Add new User'/>";
+	cell4.innerHTML = "Password change";
+	cell5.innerHTML = "<input type='button' onclick='Add_new()' value='Add new User'/>";
 };
 
 let Add_new = function()
@@ -133,6 +139,16 @@ let del = function(key,index,email)
 							{
 									storesRef.remove();
 									firebase.database().ref().child("Crds/" + email.replace(".","")).remove();
+									firebase.database().ref().child("Facebook").once('value',function(snapshot) 
+									{
+										snapshot.forEach(function(childSnapshot) 
+										{
+											if(childSnapshot.val().indexOf(email) > 0)
+												firebase.database().ref().child("Facebook/" + childSnapshot.key).remove();
+										});
+										
+									});
+									firebase.database().ref().child("Users/" + email.replace(".","")).remove();
 									document.getElementById("table").deleteRow(index+factor);
 									factor--;
 							});
@@ -148,6 +164,105 @@ let del = function(key,index,email)
 	
 };
 
+let change_password = function(key,index,email)
+{
+	let row = document.getElementById(index);
+	let cell1 = row.children[0];
+	let cell2 = row.children[1];
+	let cell3 = row.children[2];
+	let cell4 = row.children[3];
+	let cell5 = row.children[4];
+	while(row.firstChild)
+		row.removeChild(row.firstChild);
+	row.appendChild(cell1);
+	row.appendChild(cell2);
+	var input = document.createElement("INPUT");
+	input.id = key+index;
+	var btn = document.createElement("button");
+	btn.type = "button";
+	btn.innerHTML = "Password Submit";
+	btn.addEventListener("click", function() 
+	{
+		let pw = document.getElementById(key+index).value;
+		if(change_pw(key,index,email,pw)==true)
+		{
+			while(row.firstChild)
+				row.removeChild(row.firstChild);
+			row.append(cell1);
+			row.append(cell2);
+			row.append(cell3);
+			row.append(cell4);
+			row.append(cell5);
+			alert("Succeeded");
+		}
+		else
+			alert("password's length must be above 6, all characters must be from english alphabet including numbers and special characters");
+	});
+	row.appendChild(cell2);
+	row.appendChild(input);
+	row.appendChild(btn);
+	row.appendChild(cell5);
+};
+let change_pw = function(key,index,email,pw)
+{
+	if(pw.length < 6)
+	{
+		alert("Not enough characters, please type 6 or more");
+		return false;
+	}
+	let rootRef = firebase.database().ref();
+	let storesRef = rootRef.child('Users/' + key);
+	//storesRef.remove();
+	let cred = "";
+	let backup = firebase.auth().currentUser;
+	if(is_admin == 1)
+	{
+		let admin_email = "";
+		let admin_pw = "";
+		firebase.database().ref().child("Crds").once('value').then(function(snapshot) 
+		{
+			snapshot.forEach(function(childSnapshot) 
+			{
+				if(childSnapshot.key.replace('.',"") == email.replace('.',"") )
+				{
+					cred += childSnapshot.val();
+				}
+				if(childSnapshot.key.replace('.',"") == firebase.auth().currentUser.email.replace('.',""))
+				{
+					admin_email += firebase.auth().currentUser.email;
+					admin_pw += childSnapshot.val();
+				}
+			});
+		}).then(function()
+		{
+			if(cred != "")
+			{
+				firebase.auth().signInWithEmailAndPassword(email, cred).catch(function(error) 
+				{
+					console.log(error.message);
+				}).then(function()
+				{
+					if(firebase.auth().currentUser.uid != backup.uid && firebase.auth().currentUser!=null)
+					{
+						firebase.auth().currentUser.updatePassword(pw).then(function() {
+							firebase.auth().signInWithEmailAndPassword(admin_email, admin_pw).catch(function(error) 
+							{
+								console.log(error.message);
+							}).then(function()
+							{
+									firebase.database().ref().child("Crds/" + email.replace(".","")).set(pw);
+							});
+						
+						}, function(error) {
+						  console.log(error);
+						});
+					}
+				});
+			}
+		});
+	}
+	return true;
+};
 let changeColor = function(key, index)
 {
 	let row = document.getElementById(index);
@@ -155,6 +270,7 @@ let changeColor = function(key, index)
 	let cell2 = row.children[1];
 	let cell3 = row.children[2];
 	let cell4 = row.children[3];
+	let cell5 = row.children[4];
 	while(row.firstChild)
 		row.removeChild(row.firstChild);
 	row.appendChild(cell1);
@@ -167,7 +283,7 @@ let changeColor = function(key, index)
 	input.size = 2;
 	var btn = document.createElement("button");
 	btn.type = "button";
-	btn.innerHTML = "Submit";
+	btn.innerHTML = "Color Submit";
 	btn.addEventListener("click", function() 
 	{
 		let colors = input.style.backgroundColor.split(',');
@@ -189,10 +305,13 @@ let changeColor = function(key, index)
 		row.append(cell2);
 		row.append(cell3);
 		row.append(cell4);
+		row.append(cell5);
 		cell2.style.backgroundColor = "#" + color_string;
 	});
 	row.appendChild(input);
 	row.appendChild(btn);
+	row.appendChild(cell4);
+	row.appendChild(cell5);
 };
 
 let buttons_insert = function()
