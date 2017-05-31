@@ -19,6 +19,7 @@ var page_module = (function ()
 		  center: 'title',
 		  right: 'month,agendaWeek,agendaDay'
 		  },
+		  theme: true,
 		 eventClick: function(event)
 		 {
 			  if (event.url) 

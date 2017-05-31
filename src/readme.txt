@@ -1,3 +1,10 @@
+// TODO improve User Interface
+
+Version 1.5.6
+
+* FullCalendar theme was added.
+
+
 Version 1.5.5
 
 * Added Admin can change passwords
