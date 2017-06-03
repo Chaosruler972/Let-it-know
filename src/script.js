@@ -11,6 +11,7 @@ var page_module = (function ()
 		get_users_db();
 		let elemDiv = document.createElement('div');
 		elemDiv.id = "calendar1"
+		elemDiv.className = "calendar1";
 		document.body.appendChild(elemDiv);
 		  $('#calendar1').fullCalendar(
 		{
@@ -125,6 +126,10 @@ var page_module = (function ()
 	};
 	let create_buttons = function()
 	{
+		
+		let div = document.createElement("div");
+		div.id = "top_buttons_div";
+		div.className = "top_buttons_div";
 		let back_button_build = function()
 		{
 			let link = document.createElement("a");
@@ -134,10 +139,9 @@ var page_module = (function ()
 			pic.width = 40;
 			link.appendChild(pic);
 			link.href = "login_page/login.html";
-			document.body.appendChild(link);
+			div.appendChild(link);
 		};
-		
-		
+		document.body.appendChild(div);
 		back_button_build();
 	};
 	let get_users_db = function()
@@ -223,7 +227,11 @@ var page_module = (function ()
 			if(localStorage.getItem(index) === null)
 				localStorage.setItem(index,"0");
 		});
-		document.body.appendChild(table);	
+		let div = document.createElement("div");
+		div.id = "div_table";
+		div.className = "div_table";
+		div.appendChild(table);
+		document.body.appendChild(div);	
 	};
 	let add_remove_by_id = function(email,status)
 	{

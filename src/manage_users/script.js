@@ -173,7 +173,11 @@ let createTable = function()
 {
 	let table = document.createElement("table");
 	table.id = "table";
-	document.body.appendChild(table);
+	let div = document.createElement("div");
+	div.id = "table_div";
+	div.className = "table_div";
+	document.body.appendChild(div);
+	div.appendChild(table);
 	let row = table.insertRow(0);
 	let cell1 = row.insertCell(0);
 	let cell2 = row.insertCell(1);
@@ -434,6 +438,12 @@ let changeColor = function(key, index)
 
 let buttons_insert = function()
 {
+	let div = document.createElement("div");
+	div.id = "top_buttons_div";
+	div.className = "top_buttons_div";
+	document.body.appendChild(div);
+	
+	
     let link = document.createElement("a");
     //var txt= document.createTextNode("back to calendar");
 	let backpic = document.createElement("IMG");
@@ -442,16 +452,16 @@ let buttons_insert = function()
 	backpic.width = 40;
     link.appendChild(backpic);
     link.href = "../index.html";
-    document.body.appendChild(link);
+    div.appendChild(link);
 	
 	let link2 = document.createElement("a");
 	let dbpic = document.createElement("IMG");
 	dbpic.src = "../buttons/facebook.png";
 	dbpic.height = 40;
 	dbpic.width = 40;
-    link.appendChild(dbpic);
-    link.href = "../admin_page/admin.html";
-    document.body.appendChild(link);
+    link2.appendChild(dbpic);
+    link2.href = "../admin_page/admin.html";
+    div.appendChild(link2);
 	
 	let btn = document.createElement("button");
 	btn.type = "button";
@@ -462,5 +472,5 @@ let buttons_insert = function()
 	log_out_pic.width = 40;
 	btn.appendChild(log_out_pic);
 	btn.addEventListener("click", function() { firebase.auth().signOut(); window.location = "../index.html"; });
-	document.body.appendChild(btn);
+	div.appendChild(btn);
 };

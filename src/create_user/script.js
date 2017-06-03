@@ -82,6 +82,18 @@ let send_data = function()
 
 let build_HTML = function()
 {
+	let btndiv = document.createElement("div");
+	btndiv.id = "top_buttons_div";
+	btndiv.className = "top_buttons_div";
+	
+	let formdiv = document.createElement("div");
+	formdiv.id = "form_div";
+	formdiv.className = "form_div";
+	
+	document.body.appendChild(btndiv);
+	document.body.appendChild(formdiv);
+	
+	
 	let back_button_build = function()
 	{
 		let link = document.createElement("a");
@@ -92,7 +104,7 @@ let build_HTML = function()
 		pic.width = 40;
 		link.appendChild(pic);
 		link.href = "../index.html";
-		document.body.appendChild(link);
+		btndiv.appendChild(link);
 	};
 	
 	let login_form_build = function()
@@ -191,7 +203,7 @@ let build_HTML = function()
 		form_obj.appendChild(document.createTextNode(" "));
 		form_obj.appendChild(btn_reset);
 		
-		document.body.appendChild(form_obj);
+		formdiv.appendChild(form_obj);
 		document.getElementById('email').onkeydown = function(e)
 		{
 		   if(e.keyCode == 13){
