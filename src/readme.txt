@@ -1,3 +1,14 @@
+Version 1.5.7
+
+* changed user interface login from email to username
+* made changes to db
+* local storage by id instead of by number
+* nicknames to users
+* move admin rights became a button
+* added tooltip (small) 
+* added auto approve
+
+
 // TODO improve User Interface
 
 Version 1.5.6

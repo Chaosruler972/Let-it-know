@@ -20,6 +20,10 @@ var page_module = (function ()
 		  right: 'month,agendaWeek,agendaDay'
 		  },
 		  theme: true,
+		  eventRender: function(event, element) 
+		  {
+			element.attr('title', event.tooltip);
+		  },
 		 eventClick: function(event)
 		 {
 			  if (event.url) 
@@ -57,7 +61,7 @@ var page_module = (function ()
 					color+=val.color;
 				return;
 			});
-			let event={id: email , title: name , start: date , url: 'https://www.facebook.com/events/'+id , backgroundColor: color, event_source: email};
+			let event={id: email , title: name , start: date , url: 'https://www.facebook.com/events/'+id , backgroundColor: color, event_source: email, tooltip: name};
 			events.push(event);
 			// creating an event format in fullcalendar API
 			//$('#calendar1').fullCalendar( 'renderEvent', event, true);
@@ -144,8 +148,8 @@ var page_module = (function ()
 		{
 			snapshot.forEach(function(childSnapshot) 
 			{
-				let color = childSnapshot.val().substring(childSnapshot.val().indexOf("@",childSnapshot.val().indexOf("@")+1)+1,childSnapshot.val().length);
-				let email = childSnapshot.val().substring(0,childSnapshot.val().indexOf(color)-1);
+				let email = childSnapshot.key;
+				let color = childSnapshot.val();
 				let user_obj = new Object();
 				user_obj.id = email;
 				user_obj.key = childSnapshot.key;
@@ -153,7 +157,20 @@ var page_module = (function ()
 				users.push(user_obj);
 			});
 			
-		}).then(build_filter_table);
+		}).then(function()
+		{
+			database.ref("Names").once('value',function(snapshot2)
+			{
+				snapshot2.forEach(function(childSnapshot)
+				{
+					users.forEach(function(val,index,arr)
+					{
+						if(val.id == childSnapshot.key)
+							val.name = childSnapshot.val();
+					});
+				});
+			}).then(build_filter_table)
+		});
 	};
 	let build_filter_table = function()
 	{
@@ -170,7 +187,7 @@ var page_module = (function ()
 				status = "removeEvents";
 				localStorage.setItem(e.srcElement.id,"0");
 			}
-			add_remove_by_id(users[e.srcElement.id].id,status);
+			add_remove_by_id(e.srcElement.id,status);
 		};
 		
 		let i=1;
@@ -185,14 +202,17 @@ var page_module = (function ()
 		{
 			let row = table.insertRow(i);
 			let cell1 = row.insertCell(0);
-			cell1.innerHTML = val.id;
+			if(val.name == null)
+				cell1.innerHTML = val.id;
+			else
+				cell1.innerHTML = val.name;
 			let cell2 = row.insertCell(1);
 			cell2.style.backgroundColor = "#" + val.color;
 			let cell3 = row.insertCell(2);
 			let checkbox = document.createElement("INPUT");
 			checkbox.setAttribute("type", "checkbox");
 			checkbox.checked=false;
-			checkbox.id = index;
+			checkbox.id = val.id;
 			checkbox.addEventListener('click', checkbox_handler);
 			cell3.appendChild(checkbox);
 			i++;
@@ -225,25 +245,15 @@ var page_module = (function ()
 	};
 	const local_storage_func = function()
 	{
-		let i = 0;
-		while(true)
+		$.each(localStorage, function(key, value)
 		{
-			let item = localStorage.getItem(i);
-			if(item === null)
+			if(document.getElementById(key) != null && value == 1)
 			{
-				return;
+				document.getElementById(key).click();
 			}
-			if(item === "1")
-			{
-			//	document.getElementById(""+i).checked = true;
-				document.getElementById(""+i).click();
-			}
-			else
-			{
-				//document.getElementById(""+i).checked = false;
-			}
-			i++;
-		}
+		})
+		
+		
 	};
 		
 	return { initModule, gather_all_events_from_all_facebook_pages, create_buttons, events,users,build_filter_table,local_storage_func};

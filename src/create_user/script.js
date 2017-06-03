@@ -7,10 +7,10 @@ $( document ).ready(function()
 let send_data = function()
 {
 	let email = document.getElementById("email").value;
-	email+="@gmail.com";
 	let pw = document.getElementById("password").value;
 	let pw2 = document.getElementById("password2").value;
 	let colors = document.getElementById("colors").style.backgroundColor.split(',');
+	let nickname = document.getElementById("name").value;
 	let r = parseInt(colors[0].substring(4)).toString(16) + "";
 	let g = parseInt(colors[1]).toString(16)+ "";
 	let b = parseInt(colors[2]).toString(16)+ "";
@@ -36,25 +36,25 @@ let send_data = function()
 		admin_req.once('value').then(function(snapshot)
 		{
 			
-			if(snapshot.val().localeCompare(firebase.auth().currentUser.email)==0)
+			if(firebase.auth().currentUser.email == snapshot.val() + "@gmail.com" )
 			{
 				let backup = firebase.auth().currentUser;
-				firebase.auth().createUserWithEmailAndPassword(email, pw).catch(function(error)
+				firebase.auth().createUserWithEmailAndPassword(email+"@gmail.com", pw).catch(function(error)
 				{
-						//alert("Failed due to an error");
-					//	storesRef.remove();
-						//return false;
+					alert(error);
 				}).then(function()
 				{
-					let storesRef = firebase.database().ref().child('Users/' + email.replace('.', ""));
-					storesRef.set(email+"@"+color_string);
-					firebase.database().ref().child("Crds/" + email.replace('.', "" ) ).set(pw);
-					alert("Success! moving to main page");
+					let storesRef = firebase.database().ref().child('Users/' + email);
+					storesRef.set(color_string);
+					firebase.database().ref().child("Names/" + email).set(nickname);
+					firebase.database().ref().child("Crds/" + email).set(pw);
+					firebase.database().ref().child("Auto_approve/" + email).set(0);
 					firebase.auth().signInWithEmailAndPassword(admin_email, admin_pw).catch(function(error) 
 					{
 								console.log(error.message);
 					}).then(function()
 					{
+						alert("Success! moving to main page");
 						window.location = "../index.html";
 						return false;
 					});
@@ -69,7 +69,7 @@ let send_data = function()
 	{
 		snapshot.forEach(function(childSnapshot) 
 		{
-			if(childSnapshot.key.replace('.',"") == firebase.auth().currentUser.email.replace('.',""))
+			if(firebase.auth().currentUser.email == snapshot.val() + "@gmail.com" )
 			{
 				admin_email += firebase.auth().currentUser.email;
 				admin_pw += childSnapshot.val();
@@ -103,7 +103,6 @@ let build_HTML = function()
 		form_obj.acceptCharset = "UTF-8"; // utilizes english-only with special characters incl @
 		form_obj.onsubmit = send_data;
 		
-		
 		let email = document.createElement("INPUT");
 		email.setAttribute("type", "input");
 		email.name = "email";
@@ -112,10 +111,24 @@ let build_HTML = function()
 		email.form = form_obj;
 		email.id = "email";
 		email.setAttribute("pattern","[a-zA-Z0-9!#$%^*_|]{0,100}");
-	
+		
 		
 		form_obj.appendChild(document.createTextNode("Username: "));
 		form_obj.appendChild(email);
+		
+		let name = document.createElement("INPUT");
+		name.setAttribute("type", "input");
+		name.name = "name";
+		name.required = "true";
+		name.autocomplete = "true";
+		name.form = form_obj;
+		name.id = "name";
+		
+		form_obj.appendChild(document.createElement("br"));
+		form_obj.appendChild(document.createTextNode("nickname (required): "));
+		form_obj.appendChild(name);
+		
+		
 		
 		let pw = document.createElement("INPUT");
 		pw.setAttribute("type","password");

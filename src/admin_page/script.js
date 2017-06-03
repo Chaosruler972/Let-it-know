@@ -16,50 +16,17 @@ let db_rendering = function()
 	admin_req = admin_req.ref("admin");
 	admin_req.once('value').then(function(snapshot)
 	{
-		if(snapshot.val().localeCompare(firebase.auth().currentUser.email)==0)
+		if(firebase.auth().currentUser.email == snapshot.val() + "@gmail.com" )
 		{
 			is_admin=1;
-			let move_mail = function()
-			{
-				let new_email = document.getElementById("email").value;
-				let admin_req = firebase.database();
-				admin_req = admin_req.ref("admin");
-				admin_req.set(new_email);
-			};
 			
-			let form_obj = document.createElement("FORM");
-			form_obj.id = "form";
-			form_obj.autocomplete = "false";
-			form_obj.acceptCharset = "UTF-8";
-			form_obj.onsubmit = move_mail;
-			
-			let email = document.createElement("INPUT");
-			email.setAttribute("type", "email");
-			email.name = "email";
-			email.required = "true";
-			email.autocomplete = "false";
-			email.form = form_obj;
-			email.id = "email";
-			
-			let btn = document.createElement("button");
-			btn.form = form_obj;
-			btn.formNoValidate = false; // validate data
-			btn.type = "submit";
-			btn.name = "submit";
-			btn.innerHTML = "Make that e-mail admin!";
-			
-			form_obj.appendChild(document.createTextNode("Move admin to another e-mail: "));
-			form_obj.appendChild(email);
-			form_obj.appendChild(btn);
-			document.body.appendChild(document.createElement("br"));
-			document.body.appendChild(form_obj);
 			
 			let change_colors_btn = document.createElement("button");
 			change_colors_btn.type = "button";
 			change_colors_btn.innerHTML = "Manage users";
 			change_colors_btn.addEventListener("click",function() 
 			{
-				window.location = "../user_creator/user_creator.html";
+				window.location = "../manage_users/manage_users.html";
 			});
 			document.getElementById("row0").appendChild(change_colors_btn);
 		}
@@ -72,7 +39,7 @@ let db_rendering = function()
 		snapshot.forEach(function(childSnapshot) 
 		{
 			let email = childSnapshot.val().substring(1,childSnapshot.val().length);
-			if(is_admin==1 || email.localeCompare(firebase.auth().currentUser.email) == 0)
+			if(is_admin==1 || firebase.auth().currentUser.email == email + "@gmail.com" )
 			{
 				let status = "";
 				if(childSnapshot.val().charAt(0) == '0')
@@ -151,43 +118,64 @@ let Add_new = function()
 		admin_req = admin_req.ref("admin");
 		admin_req.once('value').then(function(snapshot)
 		{
-			if(snapshot.val().localeCompare(firebase.auth().currentUser.email)==0)
+			if(firebase.auth().currentUser.email == snapshot.val() + "@gmail.com" )
 			{
 				is_admin = 1;
 			}
-			//if(page.charAt(page.length-1) == '/')  // HTML LINK breaker, decrepted
-			//	page = page.substr(0,page.length-1);
-			let page_unicoded = page.replace(/[^\x20-\x7E]+/g, '');
-			if(page.localeCompare(page_unicoded) != 0) // meaning page had some special unicoded characters! 
-				page = page.replace(/\D/g,''); // strips all non-numbers from page-id, leading to verifiable string
-			let storesRef = rootRef.child('Facebook/' + page);
-			storesRef.set("0" + firebase.auth().currentUser.email);
-			let row = document.getElementById("table").insertRow(document.getElementById("table").childElementCount);
-			row.id = document.getElementById("table").childElementCount;
-			let cell1 = row.insertCell(0);
-			let cell2 = row.insertCell(1);
-			let cell3 = row.insertCell(2);
-			cell1.innerHTML = "<a href='https://www.facebook.com/" +page+ "'>" + page + "</a>";
-			let status = "Pending";
-			if(is_admin == 1)
+			let autoapprove = 0;
+			firebase.database().ref("Auto_approve").once('value', function(snapshot)
 			{
-				let aprvbtn = document.createElement('input');
-				aprvbtn.type = "button";
-				aprvbtn.style.backgroundColor = "orange";
-				aprvbtn.setAttribute("onClick","approve("+ '"' + page+ '"'+"," + document.getElementById("table").childElementCount +");");
-				aprvbtn.value = status;
-				cell2.appendChild(aprvbtn);
-			}
-			else
+				snapshot.forEach(function(ChildSnapshot)
+				{
+					
+					if(ChildSnapshot.key+"@gmail.com" == firebase.auth().currentUser.email)
+						autoapprove = ChildSnapshot.val();
+				});
+			}).then(function()
 			{
-				cell2.innerHTML = status.fontcolor("red");
-			}
-			cell3.innerHTML = firebase.auth().currentUser.email;
-			let cell4 = document.createElement('input');
-			cell4.type = "button";
-			cell4.setAttribute("onClick","del("+ '"' + page+ '"'+","+ document.getElementById("table").childElementCount +");");
-			cell4.value = "Delete";
-			row.insertCell(3).appendChild(cell4);
+				//if(page.charAt(page.length-1) == '/')  // HTML LINK breaker, decrepted
+					//	page = page.substr(0,page.length-1);
+					let page_unicoded = page.replace(/[^\x20-\x7E]+/g, '');
+					if(page.localeCompare(page_unicoded) != 0) // meaning page had some special unicoded characters! 
+						page = page.replace(/\D/g,''); // strips all non-numbers from page-id, leading to verifiable string
+					let storesRef = rootRef.child('Facebook/' + page);
+					storesRef.set(autoapprove + firebase.auth().currentUser.email.substring(0,firebase.auth().currentUser.email.indexOf("@")));
+					let row = document.getElementById("table").insertRow(document.getElementById("table").childElementCount);
+					row.id = document.getElementById("table").childElementCount;
+					let cell1 = row.insertCell(0);
+					let cell2 = row.insertCell(1);
+					let cell3 = row.insertCell(2);
+					cell1.innerHTML = "<a href='https://www.facebook.com/" +page+ "'>" + page + "</a>";
+					let status = "Pending";
+					if(autoapprove == 1)
+					{
+						let approved_status = "approved";
+						cell2.innerHTML = approved_status.fontcolor("green");
+					}
+					else
+					{
+						if(is_admin == 1)
+						{
+							let aprvbtn = document.createElement('input');
+							aprvbtn.type = "button";
+							aprvbtn.style.backgroundColor = "orange";
+							aprvbtn.setAttribute("onClick","approve("+ '"' + page+ '"'+"," + document.getElementById("table").childElementCount +");");
+							aprvbtn.value = status;
+							cell2.appendChild(aprvbtn);
+						}
+						else
+						{
+							cell2.innerHTML = status.fontcolor("red");
+						}
+					}
+					cell3.innerHTML = firebase.auth().currentUser.email.substring(0,firebase.auth().currentUser.email.indexOf("@"));
+					let cell4 = document.createElement('input');
+					cell4.type = "button";
+					cell4.setAttribute("onClick","del("+ '"' + page+ '"'+","+ document.getElementById("table").childElementCount +");");
+					cell4.value = "Delete";
+					row.insertCell(3).appendChild(cell4);
+			});
+			
 		});
 	}
 
