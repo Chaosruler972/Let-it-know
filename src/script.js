@@ -4,12 +4,14 @@ var page_module = (function ()
 	let pw = "Mgo6B97nHZKdwXMiGw5P";
 	let events = new Array();
 	let users = new Array();
+	let fb = 0;
 	let initModule = function()
 	{
 		//// Calendar initation virtual space ////
 		get_users_db();
 		let elemDiv = document.createElement('div');
 		elemDiv.id = "calendar1"
+		elemDiv.className = "calendar1";
 		document.body.appendChild(elemDiv);
 		  $('#calendar1').fullCalendar(
 		{
@@ -17,6 +19,11 @@ var page_module = (function ()
 		  left: 'prev,next,today',
 		  center: 'title',
 		  right: 'month,agendaWeek,agendaDay'
+		  },
+		  theme: true,
+		  eventRender: function(event, element) 
+		  {
+			element.attr('title', event.tooltip);
 		  },
 		 eventClick: function(event)
 		 {
@@ -55,12 +62,12 @@ var page_module = (function ()
 					color+=val.color;
 				return;
 			});
-			let event={id: email , title: name , start: date , url: 'https://www.facebook.com/events/'+id , backgroundColor: color, event_source: email};
+			let event={id: email , title: name , start: date , url: 'https://www.facebook.com/events/'+id , backgroundColor: color, event_source: email, tooltip: name};
 			events.push(event);
 			// creating an event format in fullcalendar API
 			//$('#calendar1').fullCalendar( 'renderEvent', event, true);
 			 // rendering said event to fullcalendar API
-		}
+		};
 		
 		let withdraw_events_from_facebook_page = function(data, email) // subfunction responsible for scanning entire event database file from facebook page
 		{
@@ -72,7 +79,7 @@ var page_module = (function ()
 				event_date.setISO8601(data[i].start_time); // converts time from Facebook API date format to Javascript Date format
 				add_event_to_calendar(data[i].id, data[i].name, event_date, email);		 
 			}
-		}
+		};
 		
 		
 		let add_events_from_page = function(str, email) // subfunction responsible for doing the API request for the event database
@@ -85,6 +92,9 @@ var page_module = (function ()
 				  if (response && !response.error) // if request was approved by server 
 				  {
 						withdraw_events_from_facebook_page(response.data, email);
+						fb--;
+						if(fb==0)
+							local_storage_func();
 				  }
 				  else
 				  {
@@ -93,26 +103,33 @@ var page_module = (function ()
 				}
 			);
 			
-		}
+		};
 		
 		let scan_all_db_for_pages = function() // subfunction responsible for facebook DB load via Firebase API call
 		{
 			let database = firebase.database();
 			let leadsRef = database.ref('Facebook');
-			leadsRef.once('value').then(function(snapshot) 
+			leadsRef.once('value',function(snapshot) 
 			{
+				fb = snapshot.numChildren();
 				snapshot.forEach(function(childSnapshot) 
 				{
-				  if(childSnapshot.val().charAt(0) == '1')
-					add_events_from_page(childSnapshot.key,childSnapshot.val().substring(1, childSnapshot.val().length));
+					if(childSnapshot.val().charAt(0) == '1')
+						add_events_from_page(childSnapshot.key,childSnapshot.val().substring(1, childSnapshot.val().length));
 				});
+				
 			});
-		}
+			
+		};
 		
 		scan_all_db_for_pages();
 	};
 	let create_buttons = function()
 	{
+		
+		let div = document.createElement("div");
+		div.id = "top_buttons_div";
+		div.className = "top_buttons_div";
 		let back_button_build = function()
 		{
 			let link = document.createElement("a");
@@ -122,40 +139,60 @@ var page_module = (function ()
 			pic.width = 40;
 			link.appendChild(pic);
 			link.href = "login_page/login.html";
-			document.body.appendChild(link);
+			div.appendChild(link);
 		};
-		
-		
+		document.body.appendChild(div);
 		back_button_build();
 	};
 	let get_users_db = function()
 	{
 		let database = firebase.database();
 		let leadsRef = database.ref('Users');
-		leadsRef.once('value').then(function(snapshot) 
+		leadsRef.once('value',function(snapshot) 
 		{
 			snapshot.forEach(function(childSnapshot) 
 			{
-				let color = childSnapshot.val().substring(childSnapshot.val().indexOf("@",childSnapshot.val().indexOf("@")+1)+1,childSnapshot.val().length);
-				let email = childSnapshot.val().substring(0,childSnapshot.val().indexOf(color)-1);
+				let email = childSnapshot.key;
+				let color = childSnapshot.val();
 				let user_obj = new Object();
 				user_obj.id = email;
 				user_obj.key = childSnapshot.key;
 				user_obj.color = color;
 				users.push(user_obj);
 			});
-		}).then(build_filter_table);
+			
+		}).then(function()
+		{
+			database.ref("Names").once('value',function(snapshot2)
+			{
+				snapshot2.forEach(function(childSnapshot)
+				{
+					users.forEach(function(val,index,arr)
+					{
+						if(val.id == childSnapshot.key)
+							val.name = childSnapshot.val();
+					});
+				});
+			}).then(build_filter_table)
+		});
 	};
 	let build_filter_table = function()
 	{
 		let checkbox_handler = function(e)
 		{
-			let status = "removeEvents";
+			let status = "";
 			if(e.srcElement.checked == true)
+			{
 				status="addEventSource";
-			add_remove_by_id(users[e.srcElement.id].id,status);
+				localStorage.setItem(e.srcElement.id,"1");
+			}
+			else
+			{
+				status = "removeEvents";
+				localStorage.setItem(e.srcElement.id,"0");
+			}
+			add_remove_by_id(e.srcElement.id,status);
 		};
-		
 		
 		let i=1;
 		let table = document.createElement("table");
@@ -169,14 +206,17 @@ var page_module = (function ()
 		{
 			let row = table.insertRow(i);
 			let cell1 = row.insertCell(0);
-			cell1.innerHTML = val.id;
+			if(val.name == null)
+				cell1.innerHTML = val.id;
+			else
+				cell1.innerHTML = val.name;
 			let cell2 = row.insertCell(1);
 			cell2.style.backgroundColor = "#" + val.color;
 			let cell3 = row.insertCell(2);
 			let checkbox = document.createElement("INPUT");
 			checkbox.setAttribute("type", "checkbox");
 			checkbox.checked=false;
-			checkbox.id = index;
+			checkbox.id = val.id;
 			checkbox.addEventListener('click', checkbox_handler);
 			cell3.appendChild(checkbox);
 			i++;
@@ -184,8 +224,14 @@ var page_module = (function ()
 			{
 				gather_all_events_from_all_facebook_pages();
 			}
+			if(localStorage.getItem(index) === null)
+				localStorage.setItem(index,"0");
 		});
-		document.body.appendChild(table);	
+		let div = document.createElement("div");
+		div.id = "div_table";
+		div.className = "div_table";
+		div.appendChild(table);
+		document.body.appendChild(div);	
 	};
 	let add_remove_by_id = function(email,status)
 	{
@@ -205,7 +251,20 @@ var page_module = (function ()
 				//$('#calendar1').fullCalendar('removeEvents',id);
 			}
 	};
-	return { initModule, gather_all_events_from_all_facebook_pages, create_buttons, events,users,build_filter_table,};
+	const local_storage_func = function()
+	{
+		$.each(localStorage, function(key, value)
+		{
+			if(document.getElementById(key) != null && value == 1)
+			{
+				document.getElementById(key).click();
+			}
+		})
+		
+		
+	};
+		
+	return { initModule, gather_all_events_from_all_facebook_pages, create_buttons, events,users,build_filter_table,local_storage_func};
 	
 }());
 
@@ -217,7 +276,7 @@ $( document ).ready(function()
 	page_module.initModule();
 	//$('#calendar1').fullCalendar('removeEvents',id);
 	//console.log(page_module.events);
-	console.log(page_module.events);
+	//setTimeout(page_module.local_storage_func,1500);
 });
 
 

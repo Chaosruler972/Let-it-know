@@ -15,6 +15,7 @@ $( document ).ready(function()
 let send_data = function()
 {
 	let email = document.getElementById("email").value;
+	email+="@gmail.com";
 	let pw = document.getElementById("password").value;
 	
 	if(email != null && pw != null)
@@ -22,6 +23,10 @@ let send_data = function()
 		firebase.auth().signInWithEmailAndPassword(email, pw).catch(function(error) 
 		{
 			console.log(error.message);
+			if (errorCode === 'auth/wrong-password') 
+			{
+				alert('Wrong password.');
+		    }
 		}).then(function()
 		{
 			if(firebase.auth().currentUser != null)
@@ -35,6 +40,17 @@ let send_data = function()
 
 let build_HTML = function()
 {
+	let topbtndiv = document.createElement("div");
+	topbtndiv.id = "top_button_div";
+	topbtndiv.className = "top_button_div";
+	document.body.appendChild(topbtndiv);
+	
+	let form_div = document.createElement("div");
+	form_div.id = "form_div";
+	form_div.className = "form_div";
+	document.body.appendChild(form_div);
+	
+	
 	let back_button_build = function()
 	{
 		let link = document.createElement("a");
@@ -45,7 +61,7 @@ let build_HTML = function()
 		pic.width = 40;
 		link.appendChild(pic);
 		link.href = "../index.html";
-		document.body.appendChild(link);
+		topbtndiv.appendChild(link);
 	};
 	
 	let login_form_build = function()
@@ -58,12 +74,13 @@ let build_HTML = function()
 		
 		
 		let email = document.createElement("INPUT");
-		email.setAttribute("type", "email");
+		email.setAttribute("type", "input");
 		email.name = "email";
 		email.required = "true";
 		email.autocomplete = "true";
 		email.form = form_obj;
 		email.id = "email";
+		email.setAttribute("pattern","[a-zA-Z0-9!#$%^*_|]{0,100}");
 		
 		form_obj.appendChild(document.createTextNode("E-mail: "));
 		form_obj.appendChild(email);
@@ -101,7 +118,7 @@ let build_HTML = function()
 		form_obj.appendChild(document.createTextNode(" "));
 		form_obj.appendChild(btn_reset);
 		
-		document.body.appendChild(form_obj);
+		form_div.appendChild(form_obj);
 		document.getElementById('email').onkeydown = function(e)
 		{
 		   if(e.keyCode == 13){
@@ -133,7 +150,7 @@ let auto_fill_buttons = function()
 	btn1.appendChild(document.createTextNode("Fill user (company) reguler"));
 	btn1.addEventListener("click",function() 
 	{
-		document.getElementById("email").value = "terem@gmail.com";
+		document.getElementById("email").value = "terem";
 		document.getElementById("password").value = "123456";
 	});
 	
@@ -143,7 +160,7 @@ let auto_fill_buttons = function()
 	btn2.appendChild(document.createTextNode("Fill admin (nadav)"));
 	btn2.addEventListener("click",function() 
 	{
-		document.getElementById("email").value = "yeseg11@gmail.com";
+		document.getElementById("email").value = "yeseg11";
 		document.getElementById("password").value = "123456";
 	});
 	

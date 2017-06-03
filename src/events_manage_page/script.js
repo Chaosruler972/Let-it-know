@@ -248,7 +248,14 @@ let buttons_insert = function()
     div.appendChild(link);
 	
 	
-	
+	let link2 = document.createElement("a");
+	let dbpic = document.createElement("IMG");
+	dbpic.src = "../buttons/facebook.png";
+	dbpic.height = 40;
+	dbpic.width = 40;
+    link2.appendChild(dbpic);
+    link2.href = "../admin_page/admin.html";
+    div.appendChild(link2);
 	
 	let btn = document.createElement("button");
 	btn.type = "button";
@@ -259,17 +266,9 @@ let buttons_insert = function()
 	log_out_pic.width = 40;
 	btn.appendChild(log_out_pic);
 	btn.addEventListener("click", function() { firebase.auth().signOut(); window.location = "../index.html"; });
-	
 	div.appendChild(btn);
 	
-	let events_manage = document.createElement("a");
-	let events_pic = document.createElement("IMG");
-	events_pic.src = "../buttons/events_manage.png";
-	events_pic.height = 40;
-	events_pic.width = 40;
-	events_manage.appendChild(events_pic);
-	events_manage.href = "../events_manage_page/events.html"
-	div.appendChild(events_manage);
+
 	
 	document.body.appendChild(div);
 };

@@ -1,0 +1,26 @@
+table, th, td {
+   border: 1px solid black;
+}
+td:hover {
+  background-color: yellow;
+}
+
+input
+{
+	height:100%;
+	width:100%;
+}
+button.manage_users_btn
+{
+	height:100%;
+}
+
+div.top_buttons_div
+{
+	 background-color: red;
+}
+
+div.table_div
+{
+	 background-color: orange;
+}
