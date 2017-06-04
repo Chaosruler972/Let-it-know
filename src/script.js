@@ -53,7 +53,7 @@ var page_module = (function ()
 	{
 		// subdibision into local function!
 		
-		let add_event_to_calendar = function(id, name, date, email) // subfunction responisble for adding event to fullcalendar API event and render that
+		let add_event_to_calendar = function(id, name, date, email, enddate) // subfunction responisble for adding event to fullcalendar API event and render that
 		{
 			let color = "#";
 			users.forEach(function(val)
@@ -62,11 +62,13 @@ var page_module = (function ()
 					color+=val.color;
 				return;
 			});
-			let event={id: email , title: name , start: date , url: 'https://www.facebook.com/events/'+id , backgroundColor: color, event_source: email, tooltip: name};
+			let event;
+			if(enddate == undefined)
+				event = {id: email , title: name , start: date , url: 'https://www.facebook.com/events/'+id , backgroundColor: color, event_source: email, tooltip: name};
+			else
+				event = {id: email , title: name , start: date, end:enddate , url: 'https://www.facebook.com/events/'+id , backgroundColor: color, event_source: email, tooltip: name};
+			
 			events.push(event);
-			// creating an event format in fullcalendar API
-			//$('#calendar1').fullCalendar( 'renderEvent', event, true);
-			 // rendering said event to fullcalendar API
 		};
 		
 		let withdraw_events_from_facebook_page = function(data, email) // subfunction responsible for scanning entire event database file from facebook page
@@ -81,6 +83,17 @@ var page_module = (function ()
 			}
 		};
 		
+		let page_through_all_events_from_response = function(response,email)
+		{
+			withdraw_events_from_facebook_page(response.data,email);
+			 if(response.paging.next)
+			 {
+				$.getJSON(response.paging.next, function(next_data)
+				{                
+					page_through_all_events_from_response(next_data,email);
+				});
+			} 
+		};
 		
 		let add_events_from_page = function(str, email) // subfunction responsible for doing the API request for the event database
 		{
@@ -91,10 +104,7 @@ var page_module = (function ()
 				{
 				  if (response && !response.error) // if request was approved by server 
 				  {
-						withdraw_events_from_facebook_page(response.data, email);
-						fb--;
-						if(fb==0)
-							local_storage_func();
+						page_through_all_events_from_response(response, email);
 				  }
 				  else
 				  {
@@ -102,16 +112,30 @@ var page_module = (function ()
 				  }
 				}
 			);
-			
+				
 		};
-		
+		let scan_for_direct_events = function()
+		{
+			let database = firebase.database();
+			let leadsRef = database.ref('Events');
+			leadsRef.once('value',function(snapshot) 
+			{
+				snapshot.forEach(function(childSnapshot) 
+				{
+					if(childSnapshot.val().approve == 1)
+					{
+						add_event_to_calendar(childSnapshot.val().id, childSnapshot.val().name, new Date(childSnapshot.val().start_time), childSnapshot.val().id, new Date(childSnapshot.val().end_time));
+					}
+				});
+				
+			});
+		};
 		let scan_all_db_for_pages = function() // subfunction responsible for facebook DB load via Firebase API call
 		{
 			let database = firebase.database();
 			let leadsRef = database.ref('Facebook');
 			leadsRef.once('value',function(snapshot) 
 			{
-				fb = snapshot.numChildren();
 				snapshot.forEach(function(childSnapshot) 
 				{
 					if(childSnapshot.val().charAt(0) == '1')
@@ -119,10 +143,14 @@ var page_module = (function ()
 				});
 				
 			});
-			
 		};
-		
+		scan_for_direct_events();
 		scan_all_db_for_pages();
+		$(document).ajaxStop(function () 
+		{
+			local_storage_func();
+			  // 0 === $.active
+		});
 	};
 	let create_buttons = function()
 	{
@@ -224,8 +252,6 @@ var page_module = (function ()
 			{
 				gather_all_events_from_all_facebook_pages();
 			}
-			if(localStorage.getItem(index) === null)
-				localStorage.setItem(index,"0");
 		});
 		let div = document.createElement("div");
 		div.id = "div_table";

@@ -1,9 +1,15 @@
+Version 1.5.9
+* added manual event entry page
+* added manual event view
+* added manual events to be viewable by user
+
 Version 1.5.8
 
 
 * configs is now global on root folder
 * divided to divs, backgrounded them
 * added a new page, didn't edit it at all
+* fixed amount of events, ajax stop included for local storage sync
 
 
 

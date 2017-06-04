@@ -4,23 +4,29 @@ table, th, td {
 td:hover {
   background-color: yellow;
 }
-
-input
+body
 {
-	height:100%;
-	width:100%;
+	overflow:auto;
 }
 button.manage_users_btn
 {
 	height:100%;
 }
 
+input.name
+{
+	width: 80%;
+}
+
 div.top_buttons_div
 {
 	 background-color: red;
 }
-
 div.table_div
 {
 	 background-color: orange;
+}
+div.new_date_form
+{
+	background-color: green;
 }
