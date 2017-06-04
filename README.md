@@ -35,7 +35,7 @@ We're trying to use the best tools and practices in order to produce a quality e
 
 ## Please visit our [live application](https://test-9d3f7.firebaseapp.com)
 - Alright, currently only a landing page....
-- Version 1.5.8
+- Version 1.5.9
 
 
 ## Disclaimer
