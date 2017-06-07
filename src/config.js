@@ -57,6 +57,9 @@ var config_module = (function ()
 			return null;
 		}
 	};
-	return { getaccessToken, config_firebase};
+	let google_key = 'AIzaSyAmeAmiQb5bHZLbuHG6yVt_MZJ0XJFG1A0'; // typically like Gtg-rtZdsreUr_fLfhgPfgff
+	return { getaccessToken, config_firebase,google_key};
 }());
 config_module.config_firebase();
+
+

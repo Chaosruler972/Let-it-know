@@ -1,3 +1,19 @@
+Version 1.6
+
+* implented "Fullcalendar mobile" -> versatile fullcalendar for mobile view
+* appended Firefox "e.target" instead of "e.srcelement" on script.js of index.html (calendar page)
+* removed "make admin" button (request of client)
+* upon user removal, all his manual events are deleted now too
+* added location to manual event (duh!)
+* added event's location to display
+* fixed URL (?)
+* Events are loaded per month ago,month ahead basis
+* added user website url, linked it to user text on calendar's main page
+* Added google calendar's support, but Google Calendar events are not rendering yet
+// TODO : get that Google Calendar support working, DESIGN.
+* Fixed Google Calendar
+* Added full-day event parser for holidays on Google Calendar
+
 Version 1.5.9
 * added manual event entry page
 * added manual event view
@@ -26,7 +42,7 @@ Version 1.5.7
 * nicknames to users
 * move admin rights became a button
 
-* added tooltip (small) 
+* added tooltip (small)
 * added auto approve
 
 
@@ -57,7 +73,7 @@ Version 1.5.5
 Version 1.5.4
 
 
-* fixed callbacks to be function based instead of time based 
+* fixed callbacks to be function based instead of time based
 (//TODO link)
 
 // TODO callbacks for after gather_all_events() and get_users_db() to call localstorage_function to "repick" our last picked username filter
@@ -198,7 +214,7 @@ Version 1.1
 * lists all said event on fullcalendar API
 * virtual defiance on index.html to define each list of imports to it's conclusion
 
-* completed skeleton 
+* completed skeleton
 
 // TODO
 
@@ -215,7 +231,7 @@ Version 1.1
 First version
 
 
-* added a virtual div for calendar 
+* added a virtual div for calendar
 
 * chosen an apporpiate calendar API
 

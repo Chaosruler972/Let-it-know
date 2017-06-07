@@ -4,14 +4,15 @@
 
 		<!--Full Calendar API and jquery API loading files-->
 		
-		<link rel='stylesheet' href='libs/fullcalendar/fullcalendar.css' />
-		<script src='libs/fullcalendar/lib/jquery.min.js'></script>
-		<script src='libs/fullcalendar/lib/moment.min.js'></script>
-		<script src='libs/fullcalendar/fullcalendar.js'></script>
-		
+		<link rel='stylesheet' href='libs/fullcalendar-1.5.2/fullcalendar/fullcalendar.css' />
+		<script src='libs/fullcalendar-1.5.2/jquery/jquery-1.7.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+		<script src='libs/fullcalendar-1.5.2/fullcalendar/fullcalendar.js'></script>
 		
 		<!--END of Full Calendar API and jquery API loading files-->
 
+		
+		
 		<!--Facebook API script files-->
 		<script src="https://connect.facebook.net/es_LA/sdk.js"></script>
 		<!--END of Facebook API script files-->
@@ -20,10 +21,12 @@
 		<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-database.js"></script>
+		<!--  <script src="https://apis.google.com/js/api.js"></script>  -->
 		<!--END of Google Firebase API loading files-->
 		
 		<!--Loaded a personal script to combine API's as well as page design and logic initate-->
-		<script src="config.js"></script>
+		
+		<script src="config.js"></script> <!--Required in order to access Firebase & Facebook databases while identifying ourselves-->
 		<link rel='stylesheet' href='style.css' />
 		<script src="script.js"></script>
 		<!--END of Loaded a personal script to combine API's as well as page design and logic initate-->
