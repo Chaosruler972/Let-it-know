@@ -45,7 +45,7 @@ This project is using [FullCeldar API](https://fullcalendar.io/) and respects an
 
 Please visit our wiki for furthur project info: 
 
-### [User Manual](../../wiki/user-manual) 
+### [User Manual(WEB)](https://github.com/yeseg11/Let-it-know/wiki/User-Manual(WEB)) 
 
 ### [Team Page](../../wiki/Team)
 
