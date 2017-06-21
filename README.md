@@ -47,6 +47,11 @@ Please visit our wiki for furthur project info:
 
 ### [User Manual(WEB)](https://github.com/yeseg11/Let-it-know/wiki/User-Manual(WEB)) 
 
+### [User Manual(Android)](https://github.com/yeseg11/Let-it-know/wiki/user-manual-(Android)) 
+
+### [User Manual(iOS)](https://github.com/yeseg11/Let-it-know/wiki/User-Manual-(iOS)) 
+
+
 ### [Team Page](../../wiki/Team)
 
 ### Project Documents
