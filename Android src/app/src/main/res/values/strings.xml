@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Coming out</string>
+    <string name="title_activity_login">התחברות</string>
+
+
+    <string name="facebook_app_id">1888264188125920</string>
+    <string name="fb_client_id">|gehNVYkmMDZifyIv_IfMk72_I80</string>
+    <string name="fb_login_protocol_scheme">fb1888264188125920</string>
+
+    <string name="google_calendar_key">AIzaSyBaB8PanfexBlwQ3XkZLiDLefCCNdHTJDk</string>
+    <!-- Firebase API id is in JSON on app directory -->
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in_short">התחבר</string>
+    <string name="error_invalid_email">שם המשתמש לא חוקי</string>
+    <string name="error_invalid_password">הסיסמא קצרה מדי</string>
+    <string name="error_incorrect_password">הסיסמה שגויה</string>
+    <string name="error_field_required">שדה זה הוא שדה חובה!</string>
+    <string name="permission_rationale">"נדרשת גישה לאנשי הקשר שלך על מנת שנוכל לקרוא את האימייל שלך."
+    </string>
+    <string name="title_activity_add_user">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+
+
+    <string name="monday">MON</string>
+
+    <string name="tuesday">TUE</string>
+
+    <string name="wednesday">WED</string>
+
+    <string name="thursday">THU</string>
+
+    <string name="friday">FRI</string>
+
+    <string name="saturday">SAT</string>
+
+    <string name="sunday">SUN</string>
+
+
+    <string name="open_house_desc"> הבית בפתוח הוא ארגון להטב (לסביות, הומואים, טרנסגנדרים וביסקסואלים) ירושלמי הפועל למען להטב בירושלים לקידום זכויות להטב בישראל ובירושלים בפרט, החל מיוני 2015, שרה קלה-מאיר היא מנכלית הבית הפתוח. ערן גלובוס הוא יור הוועד המנהל
+        \n \n
+        בהתאם לחזון המקימים הבית הפתוח מספק מאז היווסדו מסגרת קהילתית תומכת ללסביות, הומואים, ביסקסואלים וטרנסגנדרים בירושלים, בנוסף , הארגון פועל וקורא לשילובם של להטב בחברה ולבניית חברה פלורליטסית ושוויונית בישראל.
+    </string>
+</resources>

@@ -1,0 +1,342 @@
+[
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\square_date_cell.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0b06af793e85d3fc8ff1c04693b0da67f25bb312\\output\\res\\layout\\square_date_cell.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_calendar.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_calendar.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\weekday_textview.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0b06af793e85d3fc8ff1c04693b0da67f25bb312\\output\\res\\layout\\weekday_textview.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\date_grid_fragment.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0b06af793e85d3fc8ff1c04693b0da67f25bb312\\output\\res\\layout\\date_grid_fragment.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_edit_table.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_edit_table.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_display_event_data.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_display_event_data.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\day_of_week.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\day_of_week.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\materialcolorpicker__layout_color_picker_old_android.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\layout\\materialcolorpicker__layout_color_picker_old_android.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_new_event.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_add_new_event.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_choose_notification.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_choose_notification.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\materialcolorpicker__layout_color_picker.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\layout\\materialcolorpicker__layout_color_picker.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_smart_device_dialog_fragment.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\normal_date_cell.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0b06af793e85d3fc8ff1c04693b0da67f25bb312\\output\\res\\layout\\normal_date_cell.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\team_layout.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\team_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_remove_ids.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_add_remove_ids.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\open_house_layout.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\open_house_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manage_users.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_manage_users.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\day_view.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\day_view.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_user.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_add_user.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_manual_event.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_add_manual_event.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\c2b45b393d75fc59a7c6e7e02871087c33223aa2\\output\\res\\layout\\com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_us.xml",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\calendar_view.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0b06af793e85d3fc8ff1c04693b0da67f25bb312\\output\\res\\layout\\calendar_view.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\layout\\design_text_input_password_icon.xml"
+    }
+]

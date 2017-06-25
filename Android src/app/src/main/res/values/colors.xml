@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent" type="color">#00FFFFFF</color>
+    <color name="grey" type="color">#555555</color>
+    <color name="green" type="color">#4499CC00</color>
+    <color name="darkgreen" type="color">#FF669900</color>
+    <color name="hint_foreground_material_light" type="color">#4499CC00</color>
+    <color name="date_number_text_color" type="color">#FF4081</color>
+    <color name="get_day" type="color">#FFFF00</color>
+</resources>

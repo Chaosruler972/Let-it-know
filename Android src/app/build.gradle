@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '8niu9p2w'
+            storeFile file('D:/Users/Chaosruler/AndroidStudioProjects/key.jks')
+            storePassword '8niu9p2w'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.jerusalem_open_house.let_it_know.letitknow"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionName '1.4'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        versionCode 12
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug
+                {
+                    debuggable true
+                }
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile('com.google.api-client:google-api-client-android:1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    compile('com.google.apis:google-api-services-calendar:v3-rev249-1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.firebase:firebase-database:10.2.6'
+    compile 'com.google.firebase:firebase-auth:10.2.6'
+    compile 'com.google.android.gms:play-services-auth:10.2.6'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.pes.materialcolorpicker:library:1.0.2'
+    compile 'com.roomorama:caldroid:3.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'pub.devrel:easypermissions:0.2.1'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

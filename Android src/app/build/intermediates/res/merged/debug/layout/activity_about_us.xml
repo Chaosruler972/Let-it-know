@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/whitewood"
+    tools:context="com.jerusalem_open_house.let_it_know.letitknow.About_us">
+
+    <Button
+        android:id="@+id/about_us_back"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_test"
+        android:text="חזור"
+        android:textColor="@color/caldroid_white"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/lit1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/about_us_back"
+        android:layout_below="@+id/imageView14">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include android:id="@+id/news_title2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/open_house_layout"/>
+
+            <include android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/team_layout"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

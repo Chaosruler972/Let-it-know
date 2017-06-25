@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.jerusalem_open_house.let_it_know.letitknow.add_new_event">
+
+    <Button
+        android:id="@+id/add_new_event_add"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/new_event_back"
+        android:layout_toEndOf="@+id/new_event_back"
+        android:background="@drawable/button_test"
+        android:text="הזן את הארוע"
+        android:textAlignment="center"
+        android:textColor="@color/caldroid_white"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/add_new_event_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_new_name"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="text"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-."
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/add_new_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-."
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="382dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/lit1" />
+
+    <TextView
+        android:id="@+id/new_event_by"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/new_event_URL"
+        android:layout_below="@+id/new_event_URL"
+        android:text="By " />
+
+    <Button
+        android:id="@+id/new_event_back"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_test"
+        android:text="חזור"
+        android:textColor="@color/caldroid_white" />
+
+    <EditText
+        android:id="@+id/new_event_URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_new_event_location"
+        android:ems="10"
+        android:hint="URL:"
+        android:inputType="text"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-."
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/new_event_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_event_start_date"
+        android:layout_alignBottom="@+id/add_event_start_date"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/add_new_event_add"
+        android:ems="10"
+        android:hint="start time"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/new_event_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_event_end_date"
+        android:layout_alignBottom="@+id/add_event_end_date"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/new_event_start_time"
+        android:layout_toEndOf="@+id/add_event_start_date"
+        android:ems="10"
+        android:hint="end time"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_event_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/add_event_end_date"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/new_event_by"
+        android:ems="10"
+        android:hint="start date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_event_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_event_start_date"
+        android:layout_toStartOf="@+id/add_new_event_add"
+        android:ems="10"
+        android:hint="end date"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

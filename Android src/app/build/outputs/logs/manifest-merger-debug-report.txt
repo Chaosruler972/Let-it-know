@@ -1,0 +1,390 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:2:1-74:12
+	package
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:3:5-61
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:8:22-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Chaosruler\.android\build-cache\c820bfb87a93c8165e2842f7f4de78cd99595598\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Chaosruler\.android\build-cache\c820bfb87a93c8165e2842f7f4de78cd99595598\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:10:22-76
+application
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:13:5-72:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Chaosruler\.android\build-cache\81cf5e817f4c49ec2caa8d1de95938b2ffc353af\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\a9e47206d192e6dd482b37d0eaf031cccfd368ff\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Chaosruler\.android\build-cache\0d26a8f98c1501eda13540bcc425d1e793ebeedd\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\Chaosruler\.android\build-cache\d65cfc7363ea56cb59936a7d08dc85f4700f4313\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Chaosruler\.android\build-cache\dc938c010ee47f59475f404604e1f75956dfb755\output\AndroidManifest.xml:26:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:28:5-48:19
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Chaosruler\.android\build-cache\e61a4186966474e4842c447410f9c163deb40767\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\Chaosruler\.android\build-cache\874b8b20381866d8fff6e2cb91be9228d8de97a3\output\AndroidManifest.xml:26:5-20
+MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\Chaosruler\.android\build-cache\ab2c16c868f29d5455a20e5348a512e415857807\output\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Chaosruler\.android\build-cache\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Chaosruler\.android\build-cache\a81fdc3cafba8567770be23d5696b78c33f53dd5\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Chaosruler\.android\build-cache\d630f8031b07912e2b508e8c7e2dcc52138cf74e\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-core:10.2.6] C:\Users\Chaosruler\.android\build-cache\250adb5f3c85b8da5aaf4809aebd6134d12cf59a\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Chaosruler\.android\build-cache\c820bfb87a93c8165e2842f7f4de78cd99595598\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Chaosruler\.android\build-cache\a51b33d1daf28c421b64978b2380cfcfa2926d82\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\Chaosruler\.android\build-cache\1a3cf926c53c32f51019115842b34f4664521f8d\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Chaosruler\.android\build-cache\b58391c04dc8e854db98d606c183dec1f0fde2f5\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Chaosruler\.android\build-cache\90e585541eb064b3b6b27c7587ac93788e3723f8\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Chaosruler\.android\build-cache\0544e61d804518f172e485c1ab39ccd4e8358fa3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Chaosruler\.android\build-cache\d5b4fca17816e0a4c926b08ebf9f58fc9c106418\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Chaosruler\.android\build-cache\126bf11df59323e6cadfb4177d19cc3ab80a5c6b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Chaosruler\.android\build-cache\a7a59c496cd248c2baf17051a43eabdacbae883d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Chaosruler\.android\build-cache\899726f8548ebeba2084a91022295b6970b89b86\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:16:9-41
+	android:supportsRtl
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:18:9-36
+	android:roundIcon
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:17:9-54
+	android:allowBackup
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:14:9-35
+	android:icon
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:15:9-38
+	android:theme
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:19:9-40
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:20:9-22:55
+	android:value
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:22:13-52
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:21:13-58
+activity#com.jerusalem_open_house.let_it_know.letitknow.Splash
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:24:9-32:20
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:26:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:25:13-35
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:30:27-74
+activity#com.jerusalem_open_house.let_it_know.letitknow.calendar
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:33:9-35:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:35:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:34:13-37
+activity#com.jerusalem_open_house.let_it_know.letitknow.LoginActivity
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:36:9-39:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:39:13-49
+	android:label
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:38:13-57
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:37:13-42
+activity#com.jerusalem_open_house.let_it_know.letitknow.add_remove_ids
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:40:9-42:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:42:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:41:13-43
+activity#com.jerusalem_open_house.let_it_know.letitknow.edit_table
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:43:9-45:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:45:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:44:13-39
+activity#com.jerusalem_open_house.let_it_know.letitknow.manage_users
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:46:9-48:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:48:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:47:13-41
+activity#com.jerusalem_open_house.let_it_know.letitknow.add_user
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:49:9-51:63
+	android:label
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:51:13-60
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:50:13-37
+activity#com.jerusalem_open_house.let_it_know.letitknow.add_manual_event
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:52:9-54:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:54:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:53:13-45
+activity#com.jerusalem_open_house.let_it_know.letitknow.add_new_event
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:56:9-58:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:58:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:57:13-42
+activity#com.jerusalem_open_house.let_it_know.letitknow.Display_event_data
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:60:9-62:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:62:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:61:13-47
+activity#com.jerusalem_open_house.let_it_know.letitknow.choose_notification
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:64:9-66:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:66:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:65:13-48
+activity#com.jerusalem_open_house.let_it_know.letitknow.MainActivity
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:68:9-70:52
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:70:13-49
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:69:13-41
+activity#com.jerusalem_open_house.let_it_know.letitknow.About_us
+ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:71:9-92
+	android:screenOrientation
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:71:44-80
+	android:name
+		ADDED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml:71:19-43
+uses-sdk
+INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Chaosruler\.android\build-cache\81cf5e817f4c49ec2caa8d1de95938b2ffc353af\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database:10.2.6] C:\Users\Chaosruler\.android\build-cache\ce00d172d8052d000fa80ede22b2d95afb135895\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:10.2.6] C:\Users\Chaosruler\.android\build-cache\66020f23f17c28a8cd087da83af519e129ed53dc\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\a9e47206d192e6dd482b37d0eaf031cccfd368ff\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.6] C:\Users\Chaosruler\.android\build-cache\e95e9e6f6bcbc15c7bfcbd464d9c5ca79fa05e59\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Chaosruler\.android\build-cache\0d26a8f98c1501eda13540bcc425d1e793ebeedd\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:design:25.3.1] C:\Users\Chaosruler\.android\build-cache\d65cfc7363ea56cb59936a7d08dc85f4700f4313\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Chaosruler\.android\build-cache\a2a9c73d0720173a3e8b4162042199c928ba90e8\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Chaosruler\.android\build-cache\dc938c010ee47f59475f404604e1f75956dfb755\output\AndroidManifest.xml:20:5-44
+MERGED from [com.pes.materialcolorpicker:library:1.0.2] C:\Users\Chaosruler\.android\build-cache\18df81ba3ae581aa9db3225021cb6b9d6d685d41\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.roomorama:caldroid:3.0.1] C:\Users\Chaosruler\.android\build-cache\0b06af793e85d3fc8ff1c04693b0da67f25bb312\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Chaosruler\.android\build-cache\e61a4186966474e4842c447410f9c163deb40767\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\Chaosruler\.android\build-cache\874b8b20381866d8fff6e2cb91be9228d8de97a3\output\AndroidManifest.xml:20:5-44
+MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\Chaosruler\.android\build-cache\ab2c16c868f29d5455a20e5348a512e415857807\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Chaosruler\.android\build-cache\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Chaosruler\.android\build-cache\a81fdc3cafba8567770be23d5696b78c33f53dd5\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Chaosruler\.android\build-cache\d630f8031b07912e2b508e8c7e2dcc52138cf74e\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-core:10.2.6] C:\Users\Chaosruler\.android\build-cache\250adb5f3c85b8da5aaf4809aebd6134d12cf59a\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Chaosruler\.android\build-cache\c820bfb87a93c8165e2842f7f4de78cd99595598\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Chaosruler\.android\build-cache\a51b33d1daf28c421b64978b2380cfcfa2926d82\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\Chaosruler\.android\build-cache\1a3cf926c53c32f51019115842b34f4664521f8d\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Chaosruler\.android\build-cache\b58391c04dc8e854db98d606c183dec1f0fde2f5\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Chaosruler\.android\build-cache\90e585541eb064b3b6b27c7587ac93788e3723f8\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Chaosruler\.android\build-cache\0544e61d804518f172e485c1ab39ccd4e8358fa3\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Chaosruler\.android\build-cache\d5b4fca17816e0a4c926b08ebf9f58fc9c106418\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Chaosruler\.android\build-cache\126bf11df59323e6cadfb4177d19cc3ab80a5c6b\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Chaosruler\.android\build-cache\a7a59c496cd248c2baf17051a43eabdacbae883d\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Chaosruler\.android\build-cache\899726f8548ebeba2084a91022295b6970b89b86\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Chaosruler\.android\build-cache\d65cfc7363ea56cb59936a7d08dc85f4700f4313\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\Chaosruler\AndroidStudioProjects\LetItKnow\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Chaosruler\.android\build-cache\95273256e004ae3a10569a48d2116843fd9c0ef8\output\AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Chaosruler\.android\build-cache\0d26a8f98c1501eda13540bcc425d1e793ebeedd\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Chaosruler\.android\build-cache\0d26a8f98c1501eda13540bcc425d1e793ebeedd\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Chaosruler\.android\build-cache\0d26a8f98c1501eda13540bcc425d1e793ebeedd\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Chaosruler\.android\build-cache\0d26a8f98c1501eda13540bcc425d1e793ebeedd\output\AndroidManifest.xml:19:19-85
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\Chaosruler\.android\build-cache\d65cfc7363ea56cb59936a7d08dc85f4700f4313\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Chaosruler\.android\build-cache\a2a9c73d0720173a3e8b4162042199c928ba90e8\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Chaosruler\.android\build-cache\dc938c010ee47f59475f404604e1f75956dfb755\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Chaosruler\.android\build-cache\e61a4186966474e4842c447410f9c163deb40767\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\Chaosruler\.android\build-cache\874b8b20381866d8fff6e2cb91be9228d8de97a3\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Chaosruler\.android\build-cache\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Chaosruler\.android\build-cache\a81fdc3cafba8567770be23d5696b78c33f53dd5\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Chaosruler\.android\build-cache\d630f8031b07912e2b508e8c7e2dcc52138cf74e\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Chaosruler\.android\build-cache\90e585541eb064b3b6b27c7587ac93788e3723f8\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Chaosruler\.android\build-cache\0544e61d804518f172e485c1ab39ccd4e8358fa3\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Chaosruler\.android\build-cache\d5b4fca17816e0a4c926b08ebf9f58fc9c106418\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Chaosruler\.android\build-cache\126bf11df59323e6cadfb4177d19cc3ab80a5c6b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Chaosruler\.android\build-cache\a7a59c496cd248c2baf17051a43eabdacbae883d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Chaosruler\.android\build-cache\899726f8548ebeba2084a91022295b6970b89b86\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Chaosruler\.android\build-cache\d65cfc7363ea56cb59936a7d08dc85f4700f4313\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Chaosruler\.android\build-cache\d65cfc7363ea56cb59936a7d08dc85f4700f4313\output\AndroidManifest.xml:26:9-47
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:44:9-47:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:46:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\Chaosruler\.android\build-cache\c2b45b393d75fc59a7c6e7e02871087c33223aa2\output\AndroidManifest.xml:45:13-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Chaosruler\.android\build-cache\c820bfb87a93c8165e2842f7f4de78cd99595598\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Chaosruler\.android\build-cache\c820bfb87a93c8165e2842f7f4de78cd99595598\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Chaosruler\.android\build-cache\c820bfb87a93c8165e2842f7f4de78cd99595598\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Chaosruler\.android\build-cache\189ccb3ebc87efcb4048b0d4a66f808149ff80f7\output\AndroidManifest.xml:32:16-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:43:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:44:13-46:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:44:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:45:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Chaosruler\.android\build-cache\4ed481d2e96586d53d5e732123c3f410b6518c69\output\AndroidManifest.xml:45:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Chaosruler\.android\build-cache\a51b33d1daf28c421b64978b2380cfcfa2926d82\output\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Chaosruler\.android\build-cache\a51b33d1daf28c421b64978b2380cfcfa2926d82\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Chaosruler\.android\build-cache\a51b33d1daf28c421b64978b2380cfcfa2926d82\output\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Chaosruler\.android\build-cache\a51b33d1daf28c421b64978b2380cfcfa2926d82\output\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Chaosruler\.android\build-cache\a51b33d1daf28c421b64978b2380cfcfa2926d82\output\AndroidManifest.xml:6:79-143
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Chaosruler\.android\build-cache\b58391c04dc8e854db98d606c183dec1f0fde2f5\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Chaosruler\.android\build-cache\b58391c04dc8e854db98d606c183dec1f0fde2f5\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Chaosruler\.android\build-cache\b58391c04dc8e854db98d606c183dec1f0fde2f5\output\AndroidManifest.xml:20:20-65

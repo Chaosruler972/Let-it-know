@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    }
+]

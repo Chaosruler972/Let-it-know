@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/whitewood"
+    tools:context="com.jerusalem_open_house.let_it_know.letitknow.choose_notification">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/lit1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView7"
+        android:text="URL: " />
+
+    <EditText
+        android:id="@+id/notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-.םןךףץ "
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Body" />
+
+    <EditText
+        android:id="@+id/notification_body"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-.םןךףץ "
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/notification_back"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_test"
+        android:text="חזור"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/notification_update"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/notification_back"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_test"
+        android:text="עדכן פרטי התראה"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/notification_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/notification_update"
+        android:layout_alignParentEnd="true"
+        android:text="Active?" />
+
+    <Button
+        android:id="@+id/notification_clear_title"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView7"
+        android:background="@drawable/button_test"
+        android:text="נקה"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/notification_clear_body"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/notification_body"
+        android:background="@drawable/button_test"
+        android:text="נקה"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

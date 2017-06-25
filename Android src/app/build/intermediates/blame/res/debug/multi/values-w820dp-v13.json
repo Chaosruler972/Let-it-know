@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 78,
+                    "endOffset": 129
+                },
+                "from": {
+                    "file": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\values-w820dp\\values-w820dp.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 203,
+                        "endColumn": 78,
+                        "endOffset": 277
+                    }
+                }
+            }
+        ]
+    }
+]

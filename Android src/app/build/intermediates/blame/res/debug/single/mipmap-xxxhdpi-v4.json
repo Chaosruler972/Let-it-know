@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\whitewood.jpg",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\mipmap-xxxhdpi\\whitewood.jpg"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\background.jpg",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\mipmap-xxxhdpi\\background.jpg"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\new_user.jpg",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\mipmap-xxxhdpi\\new_user.jpg"
+    }
+]

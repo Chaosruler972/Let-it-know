@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.jerusalem_open_house.let_it_know.letitknow.calendar">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/lit1" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_above="@+id/calendar_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2">
+
+        <CalendarView
+            android:id="@+id/calendar1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2" />
+
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/calendar_spinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/calendar_view"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:id="@+id/calendar_view"
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/calendar_spinner"
+        android:background="@drawable/button_test"
+        android:text="הצג את הארוע"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/calendar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/calendar_spinner"
+        android:layout_toStartOf="@+id/calendar_spinner"
+        android:background="@drawable/button_test"
+        android:text="חזור"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/whitewood"
+    tools:context="com.jerusalem_open_house.let_it_know.letitknow.manage_users">
+
+    <Button
+        android:id="@+id/manage_users_back"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/button_test"
+        android:text="חזור"
+        android:textColor="@color/caldroid_black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="382dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/lit1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <Button
+        android:id="@+id/manage_user_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/manage_users_back"
+        android:layout_toEndOf="@+id/manage_users_check"
+        android:background="@drawable/button_test"
+        android:text="הכנס משתמש חדש"
+        android:textColor="@color/caldroid_black" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/manage_users_back"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <Spinner
+        android:id="@+id/manage_users_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/manage_users_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/manage_users_change_name"
+        android:layout_alignBottom="@+id/manage_users_change_name"
+        android:layout_alignEnd="@+id/manage_users_delete"
+        android:layout_toEndOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="text"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-."
+        />
+
+    <Button
+        android:id="@+id/manage_users_change_name"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/manage_users_spinner"
+        android:layout_toEndOf="@+id/manage_users_name"
+        android:background="@drawable/button_test"
+        android:text="שנה את שם המשתמש"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/manage_users_sample"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/manage_users_delete"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/manage_users_name"
+        android:layout_toStartOf="@+id/manage_users_change_name"
+        android:textColor="@color/caldroid_black" />
+
+    <Button
+        android:id="@+id/manage_users_change_color"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/manage_users_password"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/manage_users_name"
+        android:layout_toEndOf="@+id/manage_users_name"
+        android:background="@drawable/button_test"
+        android:text="שנה את צבע המשתמש"
+        android:textColor="@color/caldroid_black" />
+
+    <EditText
+        android:id="@+id/manage_users_password"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/manage_users_sample"
+        android:layout_toStartOf="@+id/manage_users_change_color"
+        android:ems="10"
+        android:hint="Password here"
+        android:inputType="textPassword"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-."
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/manage_users_change_pw"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/manage_users_sample"
+        android:layout_toEndOf="@+id/manage_users_password"
+        android:background="@drawable/button_test"
+        android:text="עדכן את הסיסמא"
+        android:textColor="@color/caldroid_black" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/manage_users_check"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/manage_users_change_pw"
+        android:text="is approved: "
+        android:textAlignment="textEnd" />
+
+    <CheckBox
+        android:id="@+id/manage_users_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_users_change_pw"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/manage_users_delete"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_test"
+        android:text="מחק"
+        android:textColor="@color/caldroid_black" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:layout_alignTop="@+id/manage_users_name"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/manage_users_sample" />
+
+
+</RelativeLayout>

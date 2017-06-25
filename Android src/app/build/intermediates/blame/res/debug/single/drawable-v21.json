@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\d65cfc7363ea56cb59936a7d08dc85f4700f4313\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\0c1f1a35ed958db84ef09497ec08d19870c8fdbb\\output\\res\\drawable-v21\\notification_action_background.xml"
+    }
+]

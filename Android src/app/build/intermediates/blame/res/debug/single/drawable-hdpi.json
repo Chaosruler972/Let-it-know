@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\blue_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-hdpi\\blue_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\red_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-hdpi\\red_thumb_default.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\red.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\red.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\orange.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\orange.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\green_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-hdpi\\green_thumb_default.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\quickcontact_badge_overlay_normal_light.9.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\quickcontact_badge_overlay_normal_light.9.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\navigation_next_item.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\navigation_next_item.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\green.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\green.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\navigation_previous_item.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\navigation_previous_item.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\blue.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\blue.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\green_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-hdpi\\green_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\purple.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\purple.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\blue_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-hdpi\\blue_thumb_default.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\day_bg.9.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-hdpi\\day_bg.9.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\red_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-hdpi\\red_thumb_pressed.png"
+    }
+]

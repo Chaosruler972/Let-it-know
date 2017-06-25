@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\blue_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\mipmap-xxhdpi\\blue_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\green_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\mipmap-xxhdpi\\green_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\blue_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\mipmap-xxhdpi\\blue_thumb_default.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\red_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\mipmap-xxhdpi\\red_thumb_default.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\red_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\mipmap-xxhdpi\\red_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\green_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\mipmap-xxhdpi\\green_thumb_default.png"
+    }
+]

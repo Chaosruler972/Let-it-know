@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/whitewood"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="com.jerusalem_open_house.let_it_know.letitknow.add_user">
+
+    <!-- Login progress -->
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.58"
+        app:srcCompat="@drawable/lit1" />
+
+    <LinearLayout
+        android:id="@+id/add_user_email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/add_user_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/add_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-.םןךףץ "
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/add_user_password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input password (again)"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-.םןךףץ "
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/add_user_email_sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_test"
+            android:text="הרשם"
+            android:textColor="@color/caldroid_black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/add_user_back"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.97"
+            android:background="@drawable/button_test"
+            android:text="חזור"
+            android:textColor="@color/caldroid_black" />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/add_user_login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

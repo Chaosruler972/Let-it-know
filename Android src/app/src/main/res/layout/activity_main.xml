@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:weightSum="1"
+    tools:context="com.jerusalem_open_house.let_it_know.letitknow.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+  
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="146dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/lit1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btn_menu_viewcal"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="43dp"
+        android:layout_weight="0.21"
+        android:background="@drawable/button_test"
+        android:text="הצג יומן"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <Button
+        android:id="@+id/btn_menu_edittable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_menu_viewcal"
+        android:layout_alignEnd="@+id/btn_menu_exit"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_menu_viewcal"
+        android:layout_weight="0.14"
+        android:background="@drawable/button_test"
+        android:text="סנן ארועים לפי ארגון"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+        android:id="@+id/btn_menu_login"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_menu_exit"
+        android:layout_alignBottom="@+id/btn_menu_exit"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.18"
+        android:background="@drawable/button_test"
+        android:text="התחבר כמנהל"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+    <Button
+        android:id="@+id/btn_menu_exit"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.14"
+        android:background="@drawable/button_test"
+        android:text="צא מהאפליקציה"
+        android:textColor="@color/caldroid_black"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+</RelativeLayout>

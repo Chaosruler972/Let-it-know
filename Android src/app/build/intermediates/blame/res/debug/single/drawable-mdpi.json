@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\blue_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-mdpi\\blue_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\blue_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-mdpi\\blue_thumb_default.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\green_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-mdpi\\green_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\red_thumb_pressed.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-mdpi\\red_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\green_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-mdpi\\green_thumb_default.png"
+    },
+    {
+        "merged": "D:\\Users\\Chaosruler\\AndroidStudioProjects\\LetItKnow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\red_thumb_default.png",
+        "source": "C:\\Users\\Chaosruler\\.android\\build-cache\\18df81ba3ae581aa9db3225021cb6b9d6d685d41\\output\\res\\drawable-mdpi\\red_thumb_default.png"
+    }
+]

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "337661144674",
+    "firebase_url": "https://let-it-know-68a01.firebaseio.com",
+    "project_id": "let-it-know-68a01",
+    "storage_bucket": "let-it-know-68a01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337661144674:android:f9a06d27cb4e1cc9",
+        "android_client_info": {
+          "package_name": "com.jerusalem_open_house.let_it_know.letitknow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337661144674-fjj83i3aaub690c4jjvlcp1pkt832sf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADyylH-FcSzBfw_mtXYsxqufvNWVoTFSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

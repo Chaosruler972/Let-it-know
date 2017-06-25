@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.jerusalem_open_house.let_it_know.letitknow.add_manual_event">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="382dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/lit1" />
+
+    <Button
+        android:id="@+id/add_manual_back"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tableLayout2"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/button_test"
+        android:text="חזור"
+        android:textColor="@color/caldroid_black" />
+
+    <Button
+        android:id="@+id/add_manual_event"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tableLayout2"
+        android:layout_marginEnd="26dp"
+        android:layout_toStartOf="@+id/add_manual_delete"
+        android:background="@drawable/button_test"
+        android:text="הזן ארוע חדש"
+        android:textColor="@color/caldroid_black"
+        android:visibility="visible" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_manual_back"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <Spinner
+        android:id="@+id/add_manual_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/add_manual_locatoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_manual_change_location"
+        android:ems="10"
+        android:inputType="text"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-."
+        android:layout_alignEnd="@+id/manual_event_url"
+        />
+
+    <Button
+        android:id="@+id/add_manual_change_location"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_below="@+id/add_manual_spinner"
+        android:layout_toEndOf="@+id/add_manual_locatoin"
+        android:background="@drawable/button_test"
+        android:text="עדכן מיקום האירוע"
+        android:textColor="@color/caldroid_black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_manual_locatoin"
+        android:layout_alignStart="@+id/tableLayout2"
+        android:layout_alignTop="@+id/add_manual_locatoin"
+        android:layout_toStartOf="@+id/add_manual_event"
+        android:text="Location: " />
+
+    <TextView
+        android:id="@+id/manual_event_by"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/tableLayout2"
+        android:layout_below="@+id/add_manual_locatoin"
+        android:text="By: " />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/manual_event_by"
+        android:layout_toStartOf="@+id/add_manual_locatoin"
+        android:text="Start date: " />
+
+    <EditText
+        android:id="@+id/add_manual_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/tableLayout2"
+        android:layout_below="@+id/textView6"
+        android:layout_toStartOf="@+id/add_manual_start_date"
+        android:text="Start Time: " />
+
+    <EditText
+        android:id="@+id/add_manual_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/add_manual_end_date"
+        android:layout_toStartOf="@+id/add_manual_start_time"
+        android:text="End Date:" />
+
+    <EditText
+        android:id="@+id/add_manual_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/add_manual_start_time"
+        android:layout_below="@+id/add_manual_start_time"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_toStartOf="@+id/add_manual_end_date"
+        android:text="End Time: " />
+
+    <EditText
+        android:id="@+id/add_manual_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add_manual_delete"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/add_manual_change_location"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tableLayout2"
+        android:layout_toEndOf="@+id/manual_event_url"
+        android:background="@drawable/button_test"
+        android:text="מחק"
+        android:textColor="@color/caldroid_black"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/add_manual_back"
+        android:layout_alignStart="@+id/add_manual_back"
+        android:layout_below="@+id/textView10"
+        android:layout_toStartOf="@+id/manual_event_url"
+        android:text="URL: " />
+
+    <EditText
+        android:id="@+id/manual_event_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_manual_end_time"
+        android:layout_toEndOf="@+id/add_manual_back"
+        android:ems="10"
+        android:inputType="text"
+        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnmאבגדהוזחטיכלמנסעפצקרשת!@#$%^()[]-."
+        />
+
+    <Button
+        android:id="@+id/add_manual_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/manual_event_url"
+        android:layout_below="@+id/textView10"
+        android:layout_toEndOf="@+id/add_manual_end_time"
+        android:background="@drawable/button_test"
+        android:text="עדכן את דף האירע"
+        android:textColor="@color/caldroid_black" />
+
+</RelativeLayout>
