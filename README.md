@@ -34,8 +34,8 @@ We're trying to use the best tools and practices in order to produce a quality e
 | Project Course Status | ![Week_Status](https://img.shields.io/badge/week-9-yellow.svg) |
 
 ## Please visit our [live application](https://test-9d3f7.firebaseapp.com)
-- Alright, currently only a landing page....
 - Version 1.6
+
 
 
 ## Disclaimer
